@@ -1,0 +1,18 @@
+#include <iostream>
+#include <vector>
+
+int calculateSumOfEven(const std::vector<int>& arr) {
+    int sum = 0;
+    for (int number : arr) {
+        if (number % 2 == 0) {
+            sum += number;
+        }
+    }
+    return sum;
+}
+
+int main() {
+    std::vector<int> numbers = {1, 2, 3, 4, 5};
+    std::cout << calculateSumOfEven(numbers) << std::endl;
+    return 0;
+}
